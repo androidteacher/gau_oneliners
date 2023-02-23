@@ -8,5 +8,6 @@ rm found/old_amass_results/*
 rm results/*
 rm sensitive/*
 rm sensitive/previous/*
+rm sensitive/secrets_output/*
 echo "" > targets.txt
 rm output.html
