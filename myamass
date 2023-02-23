@@ -1,0 +1,1 @@
+amass enum -active -d $1 | tee found/$1.txt
