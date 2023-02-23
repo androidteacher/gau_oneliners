@@ -272,9 +272,9 @@ def html_save(output):
 
         print('URL to access output: file://%s'%os.path.abspath(args.output))
         file = 'file:///%s'%(os.path.abspath(args.output))
-        if sys.platform == 'linux' or sys.platform == 'linux2':
+        #if sys.platform == 'linux' or sys.platform == 'linux2':
             #subprocess.call(['xdg-open',file])
-        else:
+        #else:
             #webbrowser.open(file)
     except Exception as err:
         print('Output can\'t be saved in %s due to exception: %s'%(args.output,err))
