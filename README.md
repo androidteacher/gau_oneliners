@@ -18,6 +18,8 @@
 - each line in current_list.txt is deleted after gau finishes running
 ## gau_oneliners.sh
 - scrubs for interesting endpoints
+## GF and QSREPLACE
+- lfi matching
 ## Use
 - place target domains in target.txt
 - run amass_runner.sh
