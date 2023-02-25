@@ -25,6 +25,4 @@
 - run gau_oneliners.sh
 ## Output
 - Everything ends up in the sensitive folder for manual testing
-- secrets_output will contain html files with potential SecretsFinder html pages
-- (It looks like SecretsFinder has a 'cli' option that may not be listed in the help file. Need to investigate.)
 

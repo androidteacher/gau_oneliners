@@ -5,7 +5,7 @@ now=`date +"%Y-%m-%d-at-%H:%M"`
 cp current_check/current_list.txt current_check/previous_lists/current_list-${now}.txt
 
 
-#rm found
+rm found
 for i in $(cat current_check/current_list.txt) 
 do 
 gau --fp $i | tee gau_links/$i.gaulist.com
